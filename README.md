@@ -17,3 +17,9 @@ Disclaimer: These widgets are arbitrary code!  I scrub them for malicious behavi
 1. Click "Widgets Folder"
 1. Change to "~/ubersicht-widgets"
 1. Restart Ubersicht
+
+## Disabled Widgets
+
+The following are a list of widgets that I keep because they are useful, but I generally have them disabled.  There is no way in the widget itself to set its default state to empty, so you will need to do this manually.
+
+1. BackgroundGrid.widget
