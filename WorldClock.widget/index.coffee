@@ -20,7 +20,7 @@ update: (output, domEl) ->
   zones=output.split("\n")
 
   # Initialize our HTML.
-  timeHTML = ''
+  timeHTML = '<table>'
     
   # Loop through each of the time zones.
   for zone, idx in zones
@@ -31,45 +31,41 @@ update: (output, domEl) ->
       # Split the timezone from the time.
       values = zone.split(";")
       
-      # Create the DIVs for each timezone/time. The last item is unique in that we don't want to display the border.
-      if idx < zones.length - 2
-        timeHTML = timeHTML + "<div class='Wrapper'><div class='Timezone'>" + values[0] + "</div><div class='Time'>" + values[1] + "</div></div>"    
-      else
-        timeHTML = timeHTML + "<div class='LastWrapper'><div class='Timezone'>" + values[0] + "</div><div class='Time'>" + values[1] + "</div></div>"    
+      timeHTML = timeHTML + "<tr class='Wrapper'>"
+      timeHTML = timeHTML + "<td class='Timezone'>" + values[0] + "</td>"
+      timeHTML = timeHTML + "<td class='Time'>" + values[1] + "</td>"
+      timeHTML = timeHTML + "</tr>"
+        
+  timeHTML = timeHTML + "</table>"
       
   # Set the HTML of our main DIV.
-  div.html(timeHTML)
-
-  # Change the location of the border, depending on whether or not the Wrapper DIVs are the same size as the overall DIV (i.e. the display is vertical).
-  if div.find('.Wrapper').css('width') == div.css('width')
-    div.find('.Wrapper').css({'border-bottom-style':'solid','border-bottom-width':'2px','border-bottom-color':'rgba(0,0,0,0.25)'})
-  else
-    div.find('.Wrapper').css({'border-right-style':'solid','border-right-width':'2px','border-right-color':'rgba(0,0,0,0.25)'})
-  
+  div.html(timeHTML)  
   
 # CSS Style
 style: """
-  width: 140px
-  top: 230px
+  width: 188px
+  top: 224px
   right: 10px
   font-family: Helvetica Neue
   background:rgba(#000, 0.25)
-  border:2px solid rgba(0,0,0,0.15)
-  border-radius:10px
-  text-align:center
+  // border:2px solid rgba(0,0,0,0.15)
+  border-radius:2px
+  //text-align:center
   font-size:11pt
   
   .Wrapper, .LastWrapper
     width:100%
-    display:inline-block
+    //display:inline-block
     
   .Timezone
+    text-align: right
+    width: 132px
     color: rgba(255,255,255,0.75)
     padding:6px
-    padding-bottom:0px
     
   .Time
+    width: 29px
+    //width: 49%
     color: rgba(255,255,255,0.40)
     padding:6px
-    padding-top:0px
 """
