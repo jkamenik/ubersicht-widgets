@@ -17,6 +17,7 @@ appearance =
 refreshFrequency: 600000            # Update every 10 minutes
 
 style: """
+  background: rgba(#000, 0.25)
   bottom: 250px
   right : 10px
   width: #{appearance.baseFontSize * 8.57}px
