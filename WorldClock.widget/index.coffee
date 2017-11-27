@@ -10,9 +10,6 @@ render: -> """
 
 # Update the rendered output.
 update: (output, domEl) ->
-  console.log("WorldClock")
-  console.log(output)
-
   # Get our main DIV.
   div = $(domEl)        
 
@@ -64,6 +61,7 @@ style: """
     padding:6px
     
   .Time
+    text-align: right
     width: 29px
     //width: 49%
     color: rgba(255,255,255,0.40)
