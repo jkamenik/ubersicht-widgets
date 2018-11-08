@@ -41,8 +41,8 @@ update: (output, domEl) ->
 # CSS Style
 style: """
   width: 188px
-  top: 246px
-  right: 10px
+  bottom: 400px
+  left: 10px
   font-family: Helvetica Neue
   background:rgba(#000, 0.25)
   // border:2px solid rgba(0,0,0,0.15)
