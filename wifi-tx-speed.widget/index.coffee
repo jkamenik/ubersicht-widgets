@@ -41,7 +41,7 @@ style: """
       font-size: 9px
       font-weight: 300
       
- img
+ img.wifi-icon
     height: 24px
     width: 24px
     margin-bottom: -3px
@@ -49,7 +49,7 @@ style: """
 """
 
 render: -> """
-  <div><img src="wifi-tx-speed.widget/icon48.png">
+  <div><img class="wifi-icon" src="wifi-tx-speed.widget/icon48.png">
    <a class='tx_speed'></a></div>
 """
 
