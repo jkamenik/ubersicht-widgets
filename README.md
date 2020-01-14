@@ -8,18 +8,18 @@ Disclaimer: These widgets are arbitrary code!  I scrub them for malicious behavi
 
 ## Install
 
-1. `cd ~`
-1. `git clone git@github.com:jkamenik/ubersicht-widgets.git`
-1. Download and install [Ubersicht](http://tracesof.net/uebersicht/)
-1. Open Ubersicht
-1. Click Ubersicht -> Preferences
-1. Choose "CMD" as the Interaction Shortcut
-1. Click "Widgets Folder"
-1. Change to "~/ubersicht-widgets"
-1. Restart Ubersicht
+1.  `cd ~`
+1.  `git clone git@github.com:jkamenik/ubersicht-widgets.git`
+1.  Download and install [Ubersicht](http://tracesof.net/uebersicht/)
+1.  Open Ubersicht
+1.  Click Ubersicht -> Preferences
+1.  Choose "CMD" as the Interaction Shortcut
+1.  Click "Widgets Folder"
+1.  Change to "~/ubersicht-widgets"
+1.  Restart Ubersicht
 
 ## Disabled Widgets
 
 The following are a list of widgets that I keep because they are useful, but I generally have them disabled.  There is no way in the widget itself to set its default state to empty, so you will need to do this manually.
 
-1. BackgroundGrid.widget
+1.  BackgroundGrid.widget
