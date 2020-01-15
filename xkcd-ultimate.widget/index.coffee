@@ -49,7 +49,7 @@ update: (output, domEl) ->
     container = $(domEl).find('#container')
     content = 
       """
-	  <div id="xkcd-title">#{xkcd.title}</div>
+	  <div id="xkcd-title">#{xkcd.num}. #{xkcd.title}</div>
 	  <p style="width: 300px" id="xkcd-alt-text">#{xkcd.alt}</p>
            <script>
 		   var comic = document.createElement("img");
