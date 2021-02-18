@@ -23,3 +23,12 @@ Disclaimer: These widgets are arbitrary code!  I scrub them for malicious behavi
 The following are a list of widgets that I keep because they are useful, but I generally have them disabled.  There is no way in the widget itself to set its default state to empty, so you will need to do this manually.
 
 1.  BackgroundGrid.widget
+
+## Disable Desktop Icon
+
+Ubersicht and Desktop icons can coexist, but it can get confusing.  The following can be used to hide desktop icons.
+
+```bash
+defaults write com.apple.finder CreateDesktop false
+sudo killall Finder
+```
